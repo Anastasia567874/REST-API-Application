@@ -1,6 +1,7 @@
 from requests import get, post, delete
 
-
+# Корректный запрос
+print(delete('http://localhost:5000//api/v2/users/1').json())
 # Корректный запрос
 qw = {'name': 'nas', 'surname': 'veche', 'age': 12, 'email': 'ansad@gh', 'hashed_password': 'poityuhjvcsa342'}
 print(post('http://localhost:5000/api/v2/users', json=qw).json())
